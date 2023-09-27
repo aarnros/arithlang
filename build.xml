@@ -8,9 +8,9 @@
 	<target name="arithlang-check-parser">
 		<condition property="arithlang.parser.uptodate">
 			<and>
-				<uptodate srcfile="src/arithlang/ArithLang.g" targetfile="src/arithlang/parser/ArithLangParser.java" />
-				<uptodate srcfile="src/arithlang/ArithLang.g" targetfile="src/arithlang/parser/ArithLangLexer.java" />
-				<uptodate srcfile="src/arithlang/ArithLang.g" targetfile="src/arithlang/parser/ArithLangListener.java" />
+				<uptodate srcfile="src/arithlang/ArithLang.g4" targetfile="src/arithlang/parser/ArithLangParser.java" />
+				<uptodate srcfile="src/arithlang/ArithLang.g4" targetfile="src/arithlang/parser/ArithLangLexer.java" />
+				<uptodate srcfile="src/arithlang/ArithLang.g4" targetfile="src/arithlang/parser/ArithLangListener.java" />
 			</and>
 		</condition>
 	</target>
@@ -22,7 +22,7 @@
 			<arg value="-no-listener" />
 			<arg value="-package" />
 			<arg value="arithlang.parser; import static arithlang.AST.*" />
-			<arg value="ArithLang.g" />
+			<arg value="ArithLang.g4" />
 		</java>
 	</target>
 
